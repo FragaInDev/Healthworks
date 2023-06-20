@@ -25,7 +25,7 @@ public class LoginController {
 	 }
 
 	 @RequestMapping(name = "index", value = "/index", method = RequestMethod.POST)
-	 public String login(@RequestParam Map<String, String> params, ModelMap model) throws SQLException, ClassNotFoundException {
+	 public String autenticar(@RequestParam Map<String, String> params, ModelMap model) throws SQLException, ClassNotFoundException {
 		 Usuario u = new Usuario();
 
 	     String email = params.get("email");
